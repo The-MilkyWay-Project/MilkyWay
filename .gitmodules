@@ -1,0 +1,27 @@
+[submodule "Earth"]
+	path = Earth
+	url = https://github.com/JoshDanielWalker/Earth
+[submodule "Venus"]
+	path = Venus
+	url = https://github.com/JoshDanielWalker/Venus
+[submodule "Mercury"]
+	path = Mercury
+	url = https://github.com/JoshDanielWalker/Mercury
+[submodule "Mars"]
+	path = Mars
+	url = https://github.com/JoshDanielWalker/Mars
+[submodule "Ceres"]
+	path = Ceres
+	url = https://github.com/JoshDanielWalker/Ceres
+[submodule "Jupiter"]
+	path = Jupiter
+	url = https://github.com/JoshDanielWalker/Jupiter
+[submodule "Saturn"]
+	path = Saturn
+	url = https://github.com/JoshDanielWalker/Saturn
+[submodule "Uranus"]
+	path = Uranus
+	url = https://github.com/JoshDanielWalker/Uranus
+[submodule "Neptune"]
+	path = Neptune
+	url = https://github.com/JoshDanielWalker/Neptune
