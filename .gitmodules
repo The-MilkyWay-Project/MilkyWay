@@ -22,3 +22,6 @@
 [submodule "Uranus"]
 	path = Uranus
 	url = https://github.com/JoshDanielWalker/Uranus
+[submodule "Neptune"]
+	path = Neptune
+	url = https://github.com/JoshDanielWalker/Neptune
