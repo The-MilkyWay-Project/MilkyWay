@@ -1,1 +1,1 @@
-# LUNA
+# Milky Way
