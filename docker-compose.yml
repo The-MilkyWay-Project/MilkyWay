@@ -1,0 +1,29 @@
+version: '3'
+services:
+    Mercury:
+        image: milkyway_mercury:latest
+        # build: .
+    Venus:
+        image: milkyway_venus:latest
+        # build: .
+    Earth:
+        image: milkyway_earth:latest
+        # build: .
+    Mars:
+        image: milkyway_mars:latest
+        # build: .
+    Ceres:
+        image: milkyway_ceres:latest
+        # build: .
+    Jupiter:
+        image: milkyway_jupiter:latest
+        # build: .
+    Saturn:
+        image: milkyway_saturn:latest
+        # build: .
+    Uranus:
+        image: milkyway_uranus:latest
+        # build: .
+    Neptune:
+        image: milkyway_neptune:latest
+        # build: .
