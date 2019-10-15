@@ -27,3 +27,6 @@ services:
     Neptune:
         image: milkyway_neptune:latest
         # build: .
+    Pluto:
+        image: milkyway_pluto:latest
+        # build: .
