@@ -25,3 +25,6 @@
 [submodule "Neptune"]
 	path = Neptune
 	url = https://github.com/JoshDanielWalker/Neptune
+[submodule "Pluto"]
+	path = Pluto
+	url = git@github.com:JoshDanielWalker/Pluto.git
