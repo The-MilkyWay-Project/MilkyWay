@@ -3,22 +3,22 @@ services:
     # Mercury:
     #     image: milkyway_mercury:latest
         # build: .
-    # Venus:
-    #     image: milkyway_venus:latest
-        # build: .
+    venus:
+        build: Venus/.Depoyment
+        volumes:
+          - ./Venus/tracking/:/usr/share/nginx/html/tracking/
     earth:
-        # image: milkyway_earth:latest
         build: Earth/.Depoyment
         volumes:
           - ./Earth/app/index.html:/usr/share/nginx/html/index.html
-    # Mars:
-    #     image: milkyway_mars:latest
-        # build: .
+    mars:
+        build: Mars/.Depoyment
+        volumes:
+          - ./Mars/assets/:/usr/share/nginx/html/assets/
     # Ceres:
     #     image: milkyway_ceres:latest
         # build: .
     jupiter:
-        # image: milkyway_jupiter:latest
         build: Jupiter/.Depoyment
         volumes:
           - ./Jupiter/proxy/proxy.conf:/etc/nginx/conf.d/proxy.conf
