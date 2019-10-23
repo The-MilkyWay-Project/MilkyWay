@@ -1,32 +1,38 @@
 version: '3'
 services:
-    Mercury:
-        image: milkyway_mercury:latest
+    # Mercury:
+    #     image: milkyway_mercury:latest
         # build: .
-    Venus:
-        image: milkyway_venus:latest
+    # Venus:
+    #     image: milkyway_venus:latest
         # build: .
-    Earth:
-        image: milkyway_earth:latest
+    earth:
+        # image: milkyway_earth:latest
+        build: Earth/.Depoyment
+        volumes:
+          - ./Earth/app/index.html:/usr/share/nginx/html/index.html
+    # Mars:
+    #     image: milkyway_mars:latest
         # build: .
-    Mars:
-        image: milkyway_mars:latest
+    # Ceres:
+    #     image: milkyway_ceres:latest
         # build: .
-    Ceres:
-        image: milkyway_ceres:latest
+    jupiter:
+        # image: milkyway_jupiter:latest
+        build: Jupiter/.Depoyment
+        volumes:
+          - ./Jupiter/proxy/proxy.conf:/etc/nginx/conf.d/proxy.conf
+        ports:
+          - "81:80"
+    # Saturn:
+    #     image: milkyway_saturn:latest
         # build: .
-    Jupiter:
-        image: milkyway_jupiter:latest
+    # Uranus:
+    #     image: milkyway_uranus:latest
         # build: .
-    Saturn:
-        image: milkyway_saturn:latest
+    # Neptune:
+    #     image: milkyway_neptune:latest
         # build: .
-    Uranus:
-        image: milkyway_uranus:latest
-        # build: .
-    Neptune:
-        image: milkyway_neptune:latest
-        # build: .
-    Pluto:
-        image: milkyway_pluto:latest
+    # Pluto:
+    #     image: milkyway_pluto:latest
         # build: .
