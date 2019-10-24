@@ -33,6 +33,7 @@ services:
     # Neptune:
     #     image: milkyway_neptune:latest
         # build: .
-    # Pluto:
-    #     image: milkyway_pluto:latest
-        # build: .
+    pluto:
+        build: Pluto/.Depoyment
+        volumes:
+          - ./Pluto/footer/:/usr/share/nginx/html/footer/
