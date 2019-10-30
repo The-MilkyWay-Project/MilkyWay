@@ -8,13 +8,17 @@ services:
         volumes:
           - ./Venus/tracking/:/usr/share/nginx/html/tracking/
     earth:
-        build: Earth/.Depoyment
+        build: Earth
         volumes:
-          - ./Earth/app/index.html:/usr/share/nginx/html/index.html
+          - ./Earth:/usr/src/app
+        working_dir: /usr/src/app
+        command: npm run dev
+        ports:
+          - 3000:3000
     mars:
         build: Mars/.Depoyment
         volumes:
-          - ./Mars/assets/:/usr/share/nginx/html/assets/
+          - ./Mars/content/:/usr/share/nginx/html/assets/
     # Ceres:
     #     image: milkyway_ceres:latest
         # build: .
