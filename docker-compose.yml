@@ -13,12 +13,10 @@ services:
           - ./Earth:/usr/src/app
         working_dir: /usr/src/app
         command: npm run dev
-        ports:
-          - 3000:3000
     mars:
         build: Mars/.Depoyment
         volumes:
-          - ./Mars/content/:/usr/share/nginx/html/assets/
+          - ./Mars/assets/:/usr/share/nginx/html/assets/
     # Ceres:
     #     image: milkyway_ceres:latest
         # build: .
