@@ -4,16 +4,19 @@ services:
     #     image: milkyway_mercury:latest
         # build: .
     venus:
+        # Tracking
         build: Venus/.Depoyment
         volumes:
           - ./Venus/tracking/:/usr/share/nginx/html/tracking/
     earth:
+        # Landing
         build: Earth
         volumes:
           - ./Earth:/usr/src/app
         working_dir: /usr/src/app
         command: npm run dev
     mars:
+        # Assets
         build: Mars/.Depoyment
         volumes:
           - ./Mars/assets/:/usr/share/nginx/html/assets/
@@ -21,6 +24,7 @@ services:
     #     image: milkyway_ceres:latest
         # build: .
     jupiter:
+        # Proxy
         build: Jupiter/.Depoyment
         volumes:
           - ./Jupiter/proxy/proxy.conf:/etc/nginx/conf.d/proxy.conf
