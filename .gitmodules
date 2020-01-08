@@ -28,3 +28,6 @@
 [submodule "Pluto"]
 	path = Pluto
 	url = git@github.com:JoshDanielWalker/Pluto.git
+[submodule "TrES-4b"]
+	path = TrES-4b
+	url = https://github.com/JoshDanielWalker/TrES-4b
