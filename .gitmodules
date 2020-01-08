@@ -1,33 +1,44 @@
 [submodule "Earth"]
 	path = Earth
 	url = https://github.com/JoshDanielWalker/Earth
+	ignore = untracked
 [submodule "Venus"]
 	path = Venus
 	url = https://github.com/JoshDanielWalker/Venus
+	ignore = untracked
 [submodule "Mercury"]
 	path = Mercury
 	url = https://github.com/JoshDanielWalker/Mercury
+	ignore = untracked
 [submodule "Mars"]
 	path = Mars
 	url = https://github.com/JoshDanielWalker/Mars
+	ignore = untracked
 [submodule "Ceres"]
 	path = Ceres
 	url = https://github.com/JoshDanielWalker/Ceres
+	ignore = untracked
 [submodule "Jupiter"]
 	path = Jupiter
 	url = https://github.com/JoshDanielWalker/Jupiter
+	ignore = untracked
 [submodule "Saturn"]
 	path = Saturn
 	url = https://github.com/JoshDanielWalker/Saturn
+	ignore = untracked
 [submodule "Uranus"]
 	path = Uranus
 	url = https://github.com/JoshDanielWalker/Uranus
+	ignore = untracked
 [submodule "Neptune"]
 	path = Neptune
 	url = https://github.com/JoshDanielWalker/Neptune
+	ignore = untracked
 [submodule "Pluto"]
 	path = Pluto
 	url = git@github.com:JoshDanielWalker/Pluto.git
+	ignore = untracked
 [submodule "TrES-4b"]
 	path = TrES-4b
 	url = https://github.com/JoshDanielWalker/TrES-4b
+	ignore = untracked
