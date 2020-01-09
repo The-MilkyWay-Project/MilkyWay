@@ -12,22 +12,16 @@ jobs:
 
     steps:
       - name: "Checkout source code"
-        uses: "actions/checkout@v1"
+        uses: "actions/checkout@master"
         with:
           ref: ${{ github.ref }}
       - name: "Submodules"
         uses: snickerbockers/submodules-init@v4
-      - name: "cat package.json"
-        run: cat ./package.json
-      - name: "Setup Node.js"
-        uses: "actions/setup-node@v1"
+      - name: Increment version
+        id: version   
+        uses: vinodhraj/Bump-N-Tag-Version@master
         with:
-          node-version: 8.10.0
-      - name: "Automated Version Bump"
-        uses: "phips28/gh-action-bump-version@master"
-        with:
-          tag-prefix: ''
+          file_name: './VERSION'
+          tag_version: "true"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: "cat package.json"
-        run: cat ./package.json
