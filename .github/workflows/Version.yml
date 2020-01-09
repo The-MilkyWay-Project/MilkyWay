@@ -18,7 +18,7 @@ jobs:
           ref: ${{ github.ref }}	
       - name: "Submodules"	
         uses: snickerbockers/submodules-init@v4	
-      - name: 'Get Previous tag'
+      - name: 'Get Previous Tag'
         id: previoustag
         uses: "WyriHaximus/github-action-get-previous-tag@master"
         env:
