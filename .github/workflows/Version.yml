@@ -15,8 +15,6 @@ jobs:
         uses: "actions/checkout@v1"
         with:
           ref: ${{ github.ref }}
-      - name: Bump Git Submodules
-        uses: domdere/git-submodule-action@0.0.1
       - name: "cat package.json"
         run: cat ./package.json
       - name: "Setup Node.js"
