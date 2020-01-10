@@ -1,7 +1,7 @@
 # MilkyWay
 Submodules
 
-Checkout
+## Checkout
 git clone --recurse-submodules  git@github.com:JoshDanielWalker/MilkyWay.git
 
 Update
