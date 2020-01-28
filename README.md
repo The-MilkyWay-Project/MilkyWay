@@ -21,17 +21,17 @@ Helm Charts
 
 Docker
 
-Branch Template
-master
-develop
-feature/
-release/
-hotfix/
+# Branch Template <br/>
+master <br/>
+develop <br/>
+feature/ <br/>
+release/ <br/>
+hotfix/ <br/>
 
-Version Tag Template
-major - minor - Patch
-v-0.0.0
+# Version Tag Template <br/>
+major - minor - Patch <br/>
+v-0.0.0 <br/>
 
-Commit Template
-Project Name - Ticket Number	- Status - Time	- Commit Message
-EG - MilkyWay-1 #resolve #time 2h #comment Message
+Commit Template <br/>
+Project Name - Ticket Number	- Status - Time	- Commit Message <br/>
+EG - MilkyWay-1 #resolve #time 2h #comment Message <br/>
