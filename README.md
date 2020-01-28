@@ -22,6 +22,7 @@ Helm Charts
 Docker
 
 # Branch Template <br/>
+## Gitflow <br/>
 master <br/>
 develop <br/>
 feature/ <br/>
@@ -32,6 +33,6 @@ hotfix/ <br/>
 major - minor - Patch <br/>
 v-0.0.0 <br/>
 
-Commit Template <br/>
+# Commit Template <br/>
 Project Name - Ticket Number	- Status - Time	- Commit Message <br/>
 EG - MilkyWay-1 #resolve #time 2h #comment Message <br/>
