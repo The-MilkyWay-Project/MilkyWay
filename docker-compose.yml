@@ -6,11 +6,13 @@ services:
     venus:
         # Tracking
         build: Venus/.Depoyment
-        volumes:
-          - ./Venus/tracking/:/usr/share/nginx/html/tracking/
+        # volumes:
+        #   - ./Venus/tracking/:/usr/share/nginx/html/tracking/
     earth:
         # Landing
-        build: Earth
+        build:
+          context: Earth/
+          dockerfile: .Infrastructure/Docker/Development/Dockerfile
         volumes:
           - ./Earth:/usr/src/app
         working_dir: /usr/src/app
@@ -29,7 +31,7 @@ services:
         volumes:
           - ./Jupiter/proxy/proxy.conf:/etc/nginx/conf.d/proxy.conf
         ports:
-          - "81:80"
+          - "80:80"
     # Saturn:
     #     image: milkyway_saturn:latest
         # build: .
