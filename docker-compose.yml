@@ -14,8 +14,8 @@ services:
           context: Earth/
           dockerfile: .Infrastructure/Docker/Development/Dockerfile
         volumes:
-          - ./Earth:/usr/src/app
-        working_dir: /usr/src/app
+          - ./Earth:/app
+        working_dir: /app
         command: npm run dev
     mars:
         # Assets
