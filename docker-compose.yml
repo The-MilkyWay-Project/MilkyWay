@@ -46,7 +46,7 @@ services:
           - ./Saturn:/app
         working_dir: /app
         command: npm run dev
-    Uranus:
+    uranus:
         container_name: uranus
         build:
           context: Uranus/
