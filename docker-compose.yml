@@ -36,6 +36,8 @@ services:
         volumes:
           - ./Jupiter/proxy/proxy.conf:/etc/nginx/conf.d/proxy.conf
         ports:
+          - "8888:80"
+          - "8080:80"
           - "80:80"
     saturn:
         container_name: saturn
@@ -50,7 +52,7 @@ services:
         container_name: uranus
         build:
           context: Uranus/
-          dockerfile: .Infrastructure/Docker/Dockerfile
+          dockerfile: .Infrastructure/Docker/Development/Dockerfile
         volumes:
           - ./Uranus:/app
         working_dir: /app
