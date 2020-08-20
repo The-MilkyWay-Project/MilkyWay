@@ -1,40 +1,6 @@
-[submodule "Earth"]
-	path = Earth
-	url = https://github.com/JoshDanielWalker/Earth
-	branch = master
-[submodule "Venus"]
-	path = Venus
-	url = https://github.com/JoshDanielWalker/Venus
-	branch = master
-[submodule "Mercury"]
-	path = Mercury
-	url = https://github.com/JoshDanielWalker/Mercury
-	branch = master
-[submodule "Mars"]
-	path = Mars
-	url = https://github.com/JoshDanielWalker/Mars
-	branch = master
-[submodule "Ceres"]
-	path = Ceres
-	url = https://github.com/JoshDanielWalker/Ceres
-	branch = master
-[submodule "Jupiter"]
-	path = Jupiter
-	url = https://github.com/JoshDanielWalker/Jupiter
-	branch = master
-[submodule "Saturn"]
-	path = Saturn
-	url = https://github.com/JoshDanielWalker/Saturn
-	branch = master
-[submodule "Uranus"]
-	path = Uranus
-	url = https://github.com/JoshDanielWalker/Uranus
-	branch = master
-[submodule "Neptune"]
-	path = Neptune
-	url = https://github.com/JoshDanielWalker/Neptune
-	branch = master
-[submodule "Pluto"]
-	path = Pluto
-	url = git@github.com:JoshDanielWalker/Pluto.git
-	branch = master
+[submodule "Asteroids"]
+	path = Asteroids
+	url = git@github.com:JoshDanielWalker/Asteroids.git
+[submodule "Planets"]
+	path = Planets
+	url = git@github.com:JoshDanielWalker/Planets.git
