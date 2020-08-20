@@ -6,14 +6,14 @@ services:
     venus:
         # Tracking
         container_name: venus
-        build: Venus/.Depoyment
+        build: Planets/Venus/.Depoyment
         # volumes:
         #   - ./Venus/tracking/:/usr/share/nginx/html/tracking/
     earth:
         # Landing
         container_name: earth
         build:
-          context: Earth/
+          context: Planets/Earth/
           dockerfile: .Infrastructure/Docker/Development/Dockerfile
         volumes:
           - ./Earth:/app
@@ -32,7 +32,7 @@ services:
     jupiter:
         # Proxy
         container_name: jupiter
-        build: Jupiter/.Depoyment
+        build: Planets/Jupiter/.Depoyment
         volumes:
           - ./Jupiter/proxy/proxy.conf:/etc/nginx/conf.d/proxy.conf
         ports:
@@ -42,7 +42,7 @@ services:
     saturn:
         container_name: saturn
         build:
-          context: Saturn/
+          context: Planets/Saturn/
           dockerfile: .Infrastructure/Docker/Dockerfile
         volumes:
           - ./Saturn:/app
@@ -51,7 +51,7 @@ services:
     uranus:
         container_name: uranus
         build:
-          context: Uranus/
+          context: Planets/Uranus/
           dockerfile: .Infrastructure/Docker/Development/Dockerfile
         volumes:
           - ./Uranus:/app
@@ -63,6 +63,6 @@ services:
         # build: .
     pluto:
         container_name: pluto
-        build: Pluto/.Depoyment
+        build: Planets/Pluto/.Depoyment
         volumes:
           - ./Pluto/footer/:/usr/share/nginx/html/footer/
