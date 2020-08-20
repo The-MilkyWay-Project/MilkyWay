@@ -22,7 +22,7 @@ services:
     mars:
         # Assets
         container_name: mars
-        build: Mars/.Depoyment
+        build: Planets/Mars/.Depoyment
         volumes:
           - ./Mars/assets/:/usr/share/nginx/html/assets/
     # Ceres:
