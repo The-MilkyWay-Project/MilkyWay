@@ -5,7 +5,7 @@ jobs:
     steps:
       - run: echo "hello"
 orbs:
-  jira: circleci/jira@x.y.z
+  jira: circleci/jira@1.2.2
 version: 2.1
 workflows:
   build:
