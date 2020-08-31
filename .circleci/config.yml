@@ -1,0 +1,15 @@
+jobs:
+  build:
+    docker:
+      - image: 'circleci/node:10'
+    steps:
+      - run: echo "hello"
+orbs:
+  jira: circleci/jira@x.y.z
+version: 2.1
+workflows:
+  build:
+    jobs:
+      - build:
+          post-steps:
+            - jira/notify
