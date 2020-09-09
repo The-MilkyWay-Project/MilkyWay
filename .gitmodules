@@ -1,6 +1,8 @@
 [submodule "Asteroids"]
 	path = Asteroids
 	url = git@github.com:JoshDanielWalker/Asteroids.git
+	branch = master
 [submodule "Planets"]
 	path = Planets
 	url = git@github.com:JoshDanielWalker/Planets.git
+	branch = master
