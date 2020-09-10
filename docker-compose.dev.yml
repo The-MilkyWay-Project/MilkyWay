@@ -1,0 +1,78 @@
+version: '3'
+services:
+
+    # mercury:
+    #     image: milkyway_mercury:latest
+    #     build:
+    #       context: Planets/Mercury/.Depoyment
+    #       dockerfile: .Infrastructure/Docker/Development/Dockerfile
+    #
+
+    venus:
+        container_name: venus
+        build:
+          context: Planets/Venus/.Depoyment
+          dockerfile: .Infrastructure/Docker/Development/Dockerfile
+
+    earth:
+        container_name: earth
+        build:
+          context: Planets/Earth/
+          dockerfile: .Infrastructure/Docker/Development/Dockerfile
+        volumes:
+          - ./Planets/Earth:/app
+        working_dir: /app
+        command: npm run dev
+
+    mars:
+        container_name: mars
+        build:
+          context: Planets/Mars/.Depoyment
+          dockerfile: .Infrastructure/Docker/Development/Dockerfile
+        volumes:
+          - ./Planets/Mars/assets/:/usr/share/nginx/html/assets/
+
+    jupiter:
+        container_name: jupiter
+        build:
+          context: Planets/Jupiter/.Depoyment
+          dockerfile: .Infrastructure/Docker/Development/Dockerfile
+        volumes:
+          - ./Planets/Jupiter/proxy/proxy.conf:/etc/nginx/conf.d/proxy.conf
+        ports:
+          - "8888:80"
+          - "8080:80"
+
+    saturn:
+        container_name: saturn
+        build:
+          context: Planets/Saturn/
+          dockerfile: .Infrastructure/Docker/Dockerfile
+        volumes:
+          - ./Planets/Saturn:/app
+        working_dir: /app
+        command: npm run dev
+
+    uranus:
+        container_name: uranus
+        build:
+          context: Planets/Uranus/
+          dockerfile: .Infrastructure/Docker/Development/Dockerfile
+        volumes:
+          - ./Planets/Uranus:/app
+        working_dir: /app
+        command: npm run dev
+
+    # neptune:
+    #     container_name: neptune
+    #     build:
+    #       context: Planets/Neptune/
+    #       dockerfile: .Infrastructure/Docker/Development/Dockerfile
+
+    pluto:
+        container_name: pluto
+        build:
+          context: Planets/Pluto/
+          dockerfile: .Infrastructure/Docker/Development/Dockerfile
+        volumes:
+          - ./Planets/Pluto/footer/:/usr/share/nginx/html/footer/
